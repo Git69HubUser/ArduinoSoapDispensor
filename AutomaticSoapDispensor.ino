@@ -25,11 +25,13 @@ Program flow :
 6) Repeat Steps 3, 4, 5.
 */
 
+// Core libraries
 #include <avr/sleep.h>
 #include <avr/wdt.h>
 #include <avr/interrupt.h>
-#include <Ultrasonic.h>
-#include <AFMotor.h>
+
+#include <Ultrasonic.h>               // Made by Erick Simoes
+#include <AFMotor.h>                  // Made by Adafruit
 
 #define TURN_OFF_BUILTIN_LED(void) pinMode(LED_BUILTIN, OUTPUT); digitalWrite(LED_BUILTIN, LOW);
 #define THRESHOLD 8
